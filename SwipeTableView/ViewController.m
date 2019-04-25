@@ -97,7 +97,56 @@
             make.top.bottom.right.left.equalTo(self);
         }
     }];
+
+    [self.fatherScrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:@"aaaaaa"];
+}
+
+
+/**
+ 当属性改变时,系统自动调用该方法
+
+ @param keyPath 哪一个属性被改变了
+ @param object 哪一个对象的属性被改变了
+ @param change 改成什么样了
+ @param context 传过来的同一对象
+ */
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
+    BottomScrollView *scrollView = (BottomScrollView *)object;
+    __kindof MyTableView *tableView = scrollView.pageViewController.viewControllers.firstObject.view.subviews.firstObject;
+    
+    if (scrollView.contentOffset.y > self.fatherScrollViewBeforeContentOffset.y) {
+        //向上滚动
+        NSLog(@"------------1-------------");
+        NSLog(@"向上滚动");
+        if (scrollView.contentOffset.y < 100 && tableView.contentOffset.y != tableView.beforeScrollContentOffset.y) {
+            //未固定sectionView,先让导航栏滚动到固定位置,内部tableView固定
+            tableView.contentOffset = tableView.beforeScrollContentOffset;
+            NSLog(@"-----------2--------------");
+        } else if(scrollView.contentOffset.y > 100) {
+            NSLog(@"-----------3--------------");
+            //固定sectionView,滚动内部tableView
+            scrollView.contentOffset = CGPointMake(0, 100);
+        }
+        
+    } else {
+        
+        NSLog(@"-----------4--------------");
+        //向下滚动
+        NSLog(@"向下滚动");
+        
+        if (tableView.contentOffset.y > 0 && scrollView.contentOffset.y < 100) {
+            if (scrollView.contentOffset.y != self.fatherScrollViewBeforeContentOffset.y) {
+                NSLog(@"-----------5--------------");
+                scrollView.contentOffset = self.fatherScrollViewBeforeContentOffset;
+            }
+        } else if(tableView.contentOffset.y < 0) {
+            NSLog(@"-----------6--------------");
+            tableView.contentOffset = CGPointZero;
+        }
+    }
+    NSValue *contentOffset = [change objectForKey:@"new"];
+    NSLog(@"contentOffset:%@", contentOffset);
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -158,38 +207,11 @@
 
 - (void)scrollViewDidScroll:(BottomScrollView *)scrollView {
     
-    __kindof MyTableView *tableView = scrollView.pageViewController.viewControllers.firstObject.view.subviews.firstObject;
-    
-    if (scrollView.contentOffset.y > self.fatherScrollViewBeforeContentOffset.y) {
-        //向上滚动
-        NSLog(@"------------1-------------");
-        NSLog(@"向上滚动");
-        if (scrollView.contentOffset.y < 100 && tableView.contentOffset.y != tableView.beforeScrollContentOffset.y) {
-            //未固定sectionView,先让导航栏滚动到固定位置,内部tableView固定
-            tableView.contentOffset = tableView.beforeScrollContentOffset;
-            NSLog(@"-----------2--------------");
-        } else if(scrollView.contentOffset.y > 100) {
-            NSLog(@"-----------3--------------");
-            //固定sectionView,滚动内部tableView
-            scrollView.contentOffset = CGPointMake(0, 100);
-        }
-        
-    } else {
-        
-        NSLog(@"-----------4--------------");
-        //向下滚动
-        NSLog(@"向下滚动");
-        
-        if (tableView.contentOffset.y > 0 && scrollView.contentOffset.y < 100) {
-            if (scrollView.contentOffset.y != self.fatherScrollViewBeforeContentOffset.y) {
-                NSLog(@"-----------5--------------");
-                scrollView.contentOffset = self.fatherScrollViewBeforeContentOffset;
-            }
-        } else if(tableView.contentOffset.y < 0) {
-            NSLog(@"-----------6--------------");
-            tableView.contentOffset = CGPointZero;
-        }
-    }
+   
+}
+
+- (void)dealloc {
+    [self removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
