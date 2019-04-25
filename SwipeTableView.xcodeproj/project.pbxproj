@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2544ADBFCFEDB20819A3787B /* libPods-SwipeTableViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E49A93CBE4563970C680B10 /* libPods-SwipeTableViewTests.a */; };
+		61895768E2AEC5ED4584EE5F /* libPods-SwipeTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E2B0EB92C744E723BC6633 /* libPods-SwipeTableView.a */; };
 		9D82752422714F8B00DF743B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82752322714F8B00DF743B /* AppDelegate.m */; };
 		9D82752722714F8B00DF743B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82752622714F8B00DF743B /* ViewController.m */; };
 		9D82752A22714F8B00DF743B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D82752822714F8B00DF743B /* Main.storyboard */; };
@@ -15,6 +17,17 @@
 		9D82753222714F8C00DF743B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82753122714F8C00DF743B /* main.m */; };
 		9D82753C22714F8C00DF743B /* SwipeTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82753B22714F8C00DF743B /* SwipeTableViewTests.m */; };
 		9D82754722714F8C00DF743B /* SwipeTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82754622714F8C00DF743B /* SwipeTableViewUITests.m */; };
+		9D82756D22714FBE00DF743B /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82755822714FBE00DF743B /* UIColor+Extension.m */; };
+		9D82756E22714FBE00DF743B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82755922714FBE00DF743B /* UIView+Extension.m */; };
+		9D82756F22714FBE00DF743B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82755D22714FBE00DF743B /* BaseViewController.m */; };
+		9D82757022714FBE00DF743B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756022714FBE00DF743B /* FirstViewController.m */; };
+		9D82757122714FBE00DF743B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756122714FBE00DF743B /* SecondViewController.m */; };
+		9D82757222714FBE00DF743B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756322714FBE00DF743B /* ThirdViewController.m */; };
+		9D82757322714FBE00DF743B /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756522714FBE00DF743B /* HeaderView.m */; };
+		9D82757422714FBE00DF743B /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756622714FBE00DF743B /* SectionView.m */; };
+		9D82757522714FBE00DF743B /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756722714FBE00DF743B /* MyTableView.m */; };
+		9D82757622714FBE00DF743B /* BottomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82756822714FBE00DF743B /* BottomScrollView.m */; };
+		CAE0AE807A1D18085ED2F298 /* libPods-SwipeTableViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37987ADED0BA665557B8BA2F /* libPods-SwipeTableViewUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D44DA0513F7221F0E9A4A28 /* Pods-SwipeTableViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableViewUITests.release.xcconfig"; path = "Target Support Files/Pods-SwipeTableViewUITests/Pods-SwipeTableViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F78BF2A032C99382D928A87 /* Pods-SwipeTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableView.release.xcconfig"; path = "Target Support Files/Pods-SwipeTableView/Pods-SwipeTableView.release.xcconfig"; sourceTree = "<group>"; };
+		37987ADED0BA665557B8BA2F /* libPods-SwipeTableViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTableViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C80411322087815D3B6AE2 /* Pods-SwipeTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableView.debug.xcconfig"; path = "Target Support Files/Pods-SwipeTableView/Pods-SwipeTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		5F2A84CFB1D8D365143F4494 /* Pods-SwipeTableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableViewTests.release.xcconfig"; path = "Target Support Files/Pods-SwipeTableViewTests/Pods-SwipeTableViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E49A93CBE4563970C680B10 /* libPods-SwipeTableViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTableViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90CAE20118C8416A71E4D27F /* Pods-SwipeTableViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwipeTableViewUITests/Pods-SwipeTableViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D82751F22714F8B00DF743B /* SwipeTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D82752222714F8B00DF743B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D82752322714F8B00DF743B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +71,29 @@
 		9D82754222714F8C00DF743B /* SwipeTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D82754622714F8C00DF743B /* SwipeTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeTableViewUITests.m; sourceTree = "<group>"; };
 		9D82754822714F8C00DF743B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D82755622714FBE00DF743B /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		9D82755722714FBE00DF743B /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9D82755822714FBE00DF743B /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		9D82755922714FBE00DF743B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		9D82755C22714FBE00DF743B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9D82755D22714FBE00DF743B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9D82755E22714FBE00DF743B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9D82755F22714FBE00DF743B /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		9D82756022714FBE00DF743B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9D82756122714FBE00DF743B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9D82756222714FBE00DF743B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9D82756322714FBE00DF743B /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		9D82756522714FBE00DF743B /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		9D82756622714FBE00DF743B /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
+		9D82756722714FBE00DF743B /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		9D82756822714FBE00DF743B /* BottomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomScrollView.m; sourceTree = "<group>"; };
+		9D82756922714FBE00DF743B /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		9D82756A22714FBE00DF743B /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		9D82756B22714FBE00DF743B /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
+		9D82756C22714FBE00DF743B /* BottomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomScrollView.h; sourceTree = "<group>"; };
+		9D8275782271509D00DF743B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A2F0F31008F916D85EE0BEE7 /* Pods-SwipeTableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTableViewTests.debug.xcconfig"; path = "Target Support Files/Pods-SwipeTableViewTests/Pods-SwipeTableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7E2B0EB92C744E723BC6633 /* libPods-SwipeTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61895768E2AEC5ED4584EE5F /* libPods-SwipeTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2544ADBFCFEDB20819A3787B /* libPods-SwipeTableViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +117,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE0AE807A1D18085ED2F298 /* libPods-SwipeTableViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		515939DCAE44164EFFEF16C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B0EB92C744E723BC6633 /* libPods-SwipeTableView.a */,
+				6E49A93CBE4563970C680B10 /* libPods-SwipeTableViewTests.a */,
+				37987ADED0BA665557B8BA2F /* libPods-SwipeTableViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90C774353CC6D4427E3B584F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C80411322087815D3B6AE2 /* Pods-SwipeTableView.debug.xcconfig */,
+				2F78BF2A032C99382D928A87 /* Pods-SwipeTableView.release.xcconfig */,
+				A2F0F31008F916D85EE0BEE7 /* Pods-SwipeTableViewTests.debug.xcconfig */,
+				5F2A84CFB1D8D365143F4494 /* Pods-SwipeTableViewTests.release.xcconfig */,
+				90CAE20118C8416A71E4D27F /* Pods-SwipeTableViewUITests.debug.xcconfig */,
+				2D44DA0513F7221F0E9A4A28 /* Pods-SwipeTableViewUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D82751622714F8B00DF743B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +154,8 @@
 				9D82753A22714F8C00DF743B /* SwipeTableViewTests */,
 				9D82754522714F8C00DF743B /* SwipeTableViewUITests */,
 				9D82752022714F8B00DF743B /* Products */,
+				90C774353CC6D4427E3B584F /* Pods */,
+				515939DCAE44164EFFEF16C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +172,8 @@
 		9D82752122714F8B00DF743B /* SwipeTableView */ = {
 			isa = PBXGroup;
 			children = (
+				9D8275782271509D00DF743B /* PrefixHeader.pch */,
+				9D82755422714FBE00DF743B /* Classes */,
 				9D82752222714F8B00DF743B /* AppDelegate.h */,
 				9D82752322714F8B00DF743B /* AppDelegate.m */,
 				9D82752522714F8B00DF743B /* ViewController.h */,
@@ -132,6 +205,65 @@
 			path = SwipeTableViewUITests;
 			sourceTree = "<group>";
 		};
+		9D82755422714FBE00DF743B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D82755522714FBE00DF743B /* Category */,
+				9D82755A22714FBE00DF743B /* Models */,
+				9D82755B22714FBE00DF743B /* Controllers */,
+				9D82756422714FBE00DF743B /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9D82755522714FBE00DF743B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9D82755622714FBE00DF743B /* UIColor+Extension.h */,
+				9D82755722714FBE00DF743B /* UIView+Extension.h */,
+				9D82755822714FBE00DF743B /* UIColor+Extension.m */,
+				9D82755922714FBE00DF743B /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9D82755A22714FBE00DF743B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D82755B22714FBE00DF743B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D82755C22714FBE00DF743B /* FirstViewController.h */,
+				9D82755D22714FBE00DF743B /* BaseViewController.m */,
+				9D82755E22714FBE00DF743B /* SecondViewController.h */,
+				9D82755F22714FBE00DF743B /* ThirdViewController.h */,
+				9D82756022714FBE00DF743B /* FirstViewController.m */,
+				9D82756122714FBE00DF743B /* SecondViewController.m */,
+				9D82756222714FBE00DF743B /* BaseViewController.h */,
+				9D82756322714FBE00DF743B /* ThirdViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D82756422714FBE00DF743B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D82756522714FBE00DF743B /* HeaderView.m */,
+				9D82756622714FBE00DF743B /* SectionView.m */,
+				9D82756722714FBE00DF743B /* MyTableView.m */,
+				9D82756822714FBE00DF743B /* BottomScrollView.m */,
+				9D82756922714FBE00DF743B /* HeaderView.h */,
+				9D82756A22714FBE00DF743B /* MyTableView.h */,
+				9D82756B22714FBE00DF743B /* SectionView.h */,
+				9D82756C22714FBE00DF743B /* BottomScrollView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D82754B22714F8C00DF743B /* Build configuration list for PBXNativeTarget "SwipeTableView" */;
 			buildPhases = (
+				2451717D62CD99635ED60F33 /* [CP] Check Pods Manifest.lock */,
 				9D82751B22714F8B00DF743B /* Sources */,
 				9D82751C22714F8B00DF743B /* Frameworks */,
 				9D82751D22714F8B00DF743B /* Resources */,
@@ -156,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D82754E22714F8C00DF743B /* Build configuration list for PBXNativeTarget "SwipeTableViewTests" */;
 			buildPhases = (
+				BD6F9C4B94B8A6920CA5AB4C /* [CP] Check Pods Manifest.lock */,
 				9D82753322714F8C00DF743B /* Sources */,
 				9D82753422714F8C00DF743B /* Frameworks */,
 				9D82753522714F8C00DF743B /* Resources */,
@@ -174,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D82755122714F8C00DF743B /* Build configuration list for PBXNativeTarget "SwipeTableViewUITests" */;
 			buildPhases = (
+				6B1CCAD3D18BB9FE07EF2838 /* [CP] Check Pods Manifest.lock */,
 				9D82753E22714F8C00DF743B /* Sources */,
 				9D82753F22714F8C00DF743B /* Frameworks */,
 				9D82754022714F8C00DF743B /* Resources */,
@@ -257,14 +392,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2451717D62CD99635ED60F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1CCAD3D18BB9FE07EF2838 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeTableViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6F9C4B94B8A6920CA5AB4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeTableViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D82751B22714F8B00DF743B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D82756E22714FBE00DF743B /* UIView+Extension.m in Sources */,
+				9D82757322714FBE00DF743B /* HeaderView.m in Sources */,
+				9D82756F22714FBE00DF743B /* BaseViewController.m in Sources */,
+				9D82757022714FBE00DF743B /* FirstViewController.m in Sources */,
 				9D82752722714F8B00DF743B /* ViewController.m in Sources */,
+				9D82757522714FBE00DF743B /* MyTableView.m in Sources */,
+				9D82757122714FBE00DF743B /* SecondViewController.m in Sources */,
+				9D82757222714FBE00DF743B /* ThirdViewController.m in Sources */,
+				9D82757422714FBE00DF743B /* SectionView.m in Sources */,
+				9D82757622714FBE00DF743B /* BottomScrollView.m in Sources */,
 				9D82753222714F8C00DF743B /* main.m in Sources */,
 				9D82752422714F8B00DF743B /* AppDelegate.m in Sources */,
+				9D82756D22714FBE00DF743B /* UIColor+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +647,13 @@
 		};
 		9D82754C22714F8C00DF743B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C80411322087815D3B6AE2 /* Pods-SwipeTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V272W7YD5Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = SwipeTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,10 +667,13 @@
 		};
 		9D82754D22714F8C00DF743B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F78BF2A032C99382D928A87 /* Pods-SwipeTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V272W7YD5Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = SwipeTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +687,7 @@
 		};
 		9D82754F22714F8C00DF743B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F0F31008F916D85EE0BEE7 /* Pods-SwipeTableViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +707,7 @@
 		};
 		9D82755022714F8C00DF743B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2A84CFB1D8D365143F4494 /* Pods-SwipeTableViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +727,7 @@
 		};
 		9D82755222714F8C00DF743B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CAE20118C8416A71E4D27F /* Pods-SwipeTableViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V272W7YD5Y;
@@ -523,6 +746,7 @@
 		};
 		9D82755322714F8C00DF743B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D44DA0513F7221F0E9A4A28 /* Pods-SwipeTableViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V272W7YD5Y;
