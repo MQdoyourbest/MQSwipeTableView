@@ -28,7 +28,12 @@
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return YES;
+    if ([otherGestureRecognizer.view isMemberOfClass:NSClassFromString(@"_UIQueuingScrollView")]) {
+        BOOL isTheSame = [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && [otherGestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]];
+        return !isTheSame;
+    } else {
+        return YES;
+    }
 }
 
 
